@@ -1,0 +1,249 @@
+/**
+ * WHMCS Bootstrap Override Sheet
+ *
+ * These styles override Bootstrap's defaults.
+ *
+ * @project   WHMCS
+ * @cssdoc    version 1.0-pre
+ * @package   WHMCS
+ * @author    WHMCS Limited <development@whmcs.com>
+ * @copyright Copyright (c) WHMCS Limited 2005-2015
+ * @license   http://www.whmcs.com/license/
+ * @link      http://www.whmcs.com/
+*/
+
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', Raleway, Verdana, Tahoma, serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #EFF3F5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', Raleway, Verdana, Tahoma, serif;
+    font-weight: 200;
+}
+.navbar-main .navbar-brand {
+    padding: 0;
+    font-size: 18px;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    color: #FFF;
+    background-color: #1566A1;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 13px;
+	margin-left: 0 !important;
+    margin-right: 10px;
+}
+.navbar-main .navbar-brand:hover {
+	background-color: #FFF;
+	color: #1566A1;
+}
+.navbar-main {
+    margin-bottom: 0;
+    background-color: #32A1F3;
+    background-image: linear-gradient(#32A1F3,#1F91E6);
+    border: 0;
+    border-radius: 0;
+    min-height: 70px;
+    font-size: 15px;
+}
+.navbar-main .navbar-collapse {
+	
+}
+
+.navbar-main .navbar-nav > li > a {
+    color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus,
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus,
+.navbar-main .navbar-nav > .open > a,
+.navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > .open > a:focus {
+    color: #EEE;
+    background-color: transparent;
+}
+
+#main-menu .navbar-nav {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.panel-default > .panel-heading {
+    background-color: #fafafa;
+    border-bottom: none;
+    color: #797979;
+}
+.panel-default > .panel-footer {
+    background: #fafafa;
+    border-top: 0px;
+}
+.form-group .control-label {
+	color: #7f8fa4;
+	font-weight: 500;
+}
+.form-control {
+	border-color: #DFE3E8;
+	box-shadow: none;
+	color: rgba(53,64,82,.8);
+}
+.form-control:focus {
+	border-color: #8c98a9;
+	box-shadow: none;
+	color: rgba(53,64,82,1);
+}
+.portlet {
+	padding: 20px;
+	border-radius: 4px;
+    background: #fff;
+    border: 1px solid #E7E9EC;
+    transition: all 0.4s;
+}
+.btn-primary {
+	border: 0 none;
+	background-color: #2ea1f8;
+	background-image: linear-gradient(#2ea1f8,#1991eb);
+}
+.btn-primary:hover {
+	background-color: #2084cf;
+	background-image: linear-gradient(#2084cf,#1484d7);
+}
+.btn-primary:active {
+	box-shadow: none;
+	background-color: #196caa;
+	background-image: linear-gradient(#196caa,#0c73c1);
+}
+.btn-default {
+    color: #333c48 !important;
+    border: 1px solid #dfe3e9;
+    background-color: #fff;
+    background: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
+}
+.btn-default:hover {
+    border: 1px solid #dfe3e9;
+    background-color: #f7f9fc;
+    background-image: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
+}
+.btn-default:active {
+    border: 1px solid #dfe3e9;
+    background-color: #f7f9fc;
+    background-image: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
+}
+.has-warning .form-control {
+    border-color: #ffd740;
+    box-shadow: none !important;
+}
+.has-success .form-control {
+    border-color: #33b86c;
+    box-shadow: none !important;
+}
+.has-error .form-control {
+    border-color: #ef5350;
+    box-shadow: none !important;
+}
+@media (max-width: 768px) {
+    .navbar-main .navbar-nav .open .dropdown-menu > li > a {
+        color: #ddd;
+    }
+    .navbar-main .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #fff;
+    }
+}
+
+.panel {
+  font-size: 0.9em;
+}
+
+.list-group {
+  font-size: 0.9em;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    background-color: #12AEEB;
+}
+
+.pagination {
+    font-size: 0.8em;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    color: white;
+    background-color: #12AEEB;
+    border-color: #12AEEB;
+}
+
+.navbar-main .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #12AEEB;
+}
+
+input[type='file'].form-control {
+    height: inherit;
+    margin-bottom: 5px;
+}
+
+.list-group-item {
+    padding: 7px 15px;
+}
+.panel-body {
+    padding: 10px 15px;
+}
+.md-editor {
+	border: 1px solid #DFE3E8;
+    border-radius: 4px;
+}
+.md-editor>.md-header {
+	border-radius: 4px 4px 0 0;
+}
+.md-editor .md-footer {
+	border-radius: 0 0 4px 4px;
+}
+.md-editor>textarea {
+	background-color: #FFF !important;
+}
+
+/* 
+ * We use a larger font-size than the bootstrap default, which requires an increase 
+ * in the top offset to maintain correct alignment in form control feedback. 
+ */
+.has-feedback label ~ .form-control-feedback {
+    top: 27px !important;
+}
+
+.list-group-item > i.fa.fa-circle-o {
+    color: #808080;
+}
+body.login {
+	background-color: #212530;
+}
+body.login footer {
+	display: none;
+}
+.navbar-toggle {
+    margin-top: 18px;
+    margin-right: 0;
+    margin-bottom: 18px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}

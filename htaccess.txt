@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# 公告伪静态
+RewriteRule ^announcements/([0-9]+)/[a-z0-9_-]+\.html$ ./announcements.php?id=$1 [L,NC]
+RewriteRule ^announcements/?$ ./announcements.php [L,NC]
+
+# 下载伪静态
+RewriteRule ^downloads/([0-9]+)/([^/]*)$ ./downloads.php?action=displaycat&catid=$1 [L,NC]
+RewriteRule ^downloads/?$ ./downloads.php [L,NC]
+
+# 知识库伪静态
+RewriteRule ^knowledgebase/([0-9]+)/[a-z0-9_-]+\.html$ ./knowledgebase.php?action=displayarticle&id=$1 [L,NC]
+RewriteRule ^knowledgebase/([0-9]+)/([^/]*)$ ./knowledgebase.php?action=displaycat&catid=$1 [L,NC]
+RewriteRule ^knowledgebase/?$ ./knowledgebase.php [L,NC]
+
+# OpenID Discovery Document (http://openid.net/specs/openid-connect-discovery-1_0.html)
+RewriteRule ^.well-known/openid-configuration ./oauth/openid-configuration.php [L,NC]
+
+#NeWorld 需要自定义面可以自行配置
+RewriteRule ^pricing?/?$ pricing.php [QSA,L] #价格页面
+RewriteRule ^features?/?$ features.php [QSA,L] #特色页面
+RewriteRule ^vps?/?$ vps.php [QSA,L] #VPS 页面
+RewriteRule ^tos?/?$ tos.php [QSA,L] #服务条款
+RewriteRule ^a/([^/]*)?/?$ ./aff.php?aff=$1 [L,NC] #简化推广
+
+# 防止目录暴露禁止TPL INC CFG文件被下载
+Options -Indexes
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+<Files ~ "\.(tpl|inc|cfg)$">
+order deny,allow
+deny from all
+</files>

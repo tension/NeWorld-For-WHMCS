@@ -1,0 +1,9 @@
+# WHMCS Six Theme Configuration File
+
+name: "NeWorld For WHMCS Theme"
+description: "The NeWorld Theme for WHMCS Version 6.0"
+author: "teNsi0n"
+properties:
+  serverSidePagination: false # Defines client side will handle pagination
+config:
+    parent: NeWorld

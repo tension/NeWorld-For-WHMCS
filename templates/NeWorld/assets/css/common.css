@@ -1,0 +1,32 @@
+@import url("//cdn.moefont.com/fonts/css?family=Raleway:300,400,600,700");
+
+.space {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.space2x {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.space3x {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.empty_space {
+	clear: both;
+	content: ' ';
+}
+.title-head {
+	color: #32607A;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.border-top {
+	border-top: 2px solid #F6F9FA;
+}
+p.desc {
+	color: #8CA5B4;
+	font-size: 16px;
+	line-height: 2;
+	margin-bottom: 0;
+}

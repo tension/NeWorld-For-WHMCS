@@ -1,0 +1,36 @@
+html[lang=en_GB] body.login,
+html[lang=en_GB] .nowhmcs header,
+html[lang=en_GB] .slider-1,
+html[lang=en_GB] .slider-2 {
+    background-color: #356AB3;
+    background-image: -moz-linear-gradient(#356ab3 0,#5d8ed0 100%);
+    background-image: -o-linear-gradient(#356ab3 0,#5d8ed0 100%);
+    background-image: -webkit-linear-gradient(#356ab3 0,#5d8ed0 100%);
+    background-image: linear-gradient(#356ab3 0,#5d8ed0 100%);
+}
+html[lang=en_GB] .nav-home:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, RGBA(0,0,0, 0) 0%,RGBA(53, 106, 179, 1.00) 20%,RGBA(53, 106, 179, 1.00) 50%,RGBA(53, 106, 179, 1.00) 80%,RGBA(0,0,0, 0) 100%);
+}
+html[lang=en_GB] footer .navbar-brand {
+	color: #356AB3
+}
+
+html[lang=en_GB] a {
+	color: #356ab3;
+}
+html[lang=en_GB] .nowhmcs header .wave-wrap {
+    background: url('../img/wave-header@2x.png')repeat-x center bottom;
+    background-size: 1862px auto;
+    width: 100%;
+    height: 100%;
+}
+html[lang=en_GB] .home-slider {
+    color: #FFF;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 60%;
+    background-image: url('../img/macbook@2x.png');
+}
