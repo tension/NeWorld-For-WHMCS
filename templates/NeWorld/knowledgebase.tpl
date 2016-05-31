@@ -1,26 +1,26 @@
-<form role="form" method="post" action="{$WEB_ROOT}/knowledgebase.php?action=search">
-    <div class="input-group">
-        <input type="text" name="search" class="form-control" placeholder="{$LANG.kbsearchexplain}" />
-        <span class="input-group-btn">
-            <input type="submit" class="btn btn-primary btn-input-padded-responsive" value="{$LANG.search}" />
-        </span>
-    </div>
-</form>
+<div class="knowledgebase">
+	<form role="form" method="post" action="{$WEB_ROOT}/knowledgebase.php?action=search">
+	    <div class="input-group">
+	        <input type="text" name="search" class="form-control" placeholder="{$LANG.kbsearchexplain}" />
+	        <span class="input-group-btn">
+	            <input type="submit" class="btn btn-primary btn-input-padded-responsive" value="{$LANG.search}" />
+	        </span>
+	    </div>
+	</form>
+</div>
 
-<h2>{$LANG.knowledgebasecategories}</h2>
+<h2 class="know">{$LANG.knowledgebasecategories}</h2>
 
 {if $kbcats}
     <div class="row kbcategories">
         {foreach from=$kbcats name=kbcats item=kbcat}
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-md-3">
                 <a href="{if $seofriendlyurls}{$WEB_ROOT}/knowledgebase/{$kbcat.id}/{$kbcat.urlfriendlyname}{else}knowledgebase.php?action=displaycat&amp;catid={$kbcat.id}{/if}">
-                    <span class="glyphicon glyphicon-folder-close"></span> {$kbcat.name} <span class="badge badge-info">{$kbcat.numarticles}</span>
+                    <span class="icons"></span>
+                    <h3 class="title">{$kbcat.name}</h3>
+					<p>{$kbcat.description}</p>
                 </a>
-                <p>{$kbcat.description}</p>
             </div>
-            {if $smarty.foreach.kbcats.iteration mod 3 == 0}
-                <div class="clearfix"></div>
-            {/if}
         {/foreach}
     </div>
 {else}
