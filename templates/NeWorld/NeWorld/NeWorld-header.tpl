@@ -97,31 +97,16 @@
 {if $announcements}
 <section class="announcements">
 	<div class="container">
-
-    {foreach $announcements as $announcement}
-        {if $announcement@index < 1}
-            <p>
-                <strong>{$announcement.rawDate|date_format:"Y-m-d"}</strong>
-                <a href="{if $seofriendlyurls}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}">{$announcement.title}</a>
-            </p>
-
-            {if $announcementsFbRecommend}
-                <script>
-                    (function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) {
-                            return;
-                        }
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));
-                </script>
-                <div class="fb-like hidden-sm hidden-xs" data-layout="standard" data-href="{$systemurl}{if $seofriendlyurls}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
-                <div class="fb-like hidden-lg hidden-md" data-layout="button_count" data-href="{$systemurl}{if $seofriendlyurls}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
-            {/if}
-        {/if}
-    {/foreach}
+		<h2>{$LANG.homeannouncements}</h2>
+		<ul>
+	    {foreach $announcements as $announcement}
+	        {if $announcement@index < 3}
+            <li>
+            	[{$announcement.rawDate|date_format:"m-d"}] <a href="{if $seofriendlyurls}announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}">{$announcement.title}</a>
+            </li>
+	        {/if}
+	    {/foreach}
+		</ul>
 	</div>
 </section>
 {/if}
