@@ -1467,36 +1467,6 @@ div.sidebar .list-group-item-selected .badge {
         box-shadow: none;
     }
 
-    .panel-actions > .panel-heading > .panel-title {
-        display: inline;
-    }
-
-    .panel-actions > .panel-heading {
-        border-radius: 3px;
-    }
-
-    .panel-actions > .list-group {
-        padding: 10px;
-        overflow-x: scroll;
-        overflow-y: none;
-        white-space: nowrap;
-    }
-
-    .panel-actions > .list-group .list-group-item {
-        display: inline-block;
-        border: 1px solid #ddd !important;
-        border-radius: 3px !important;
-        white-space: nowrap;
-        text-align: center;
-        padding: 5px 25px;
-        margin: 2px;
-    }
-
-    .panel-actions > .list-group .list-group-item > .badge {
-        float: none;
-        margin: -2px 0 0 10px;
-    }
-
 }
 
 /**

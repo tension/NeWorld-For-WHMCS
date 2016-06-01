@@ -70,5 +70,16 @@ TEL: 18910030001 MAIL:tension@me.com -->
 {include file="$template/includes/verifyemail.tpl"}
 
 {if $formaction != 'dologin.php' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
-<section id="main-body" class="content content--border">
+		<div class="navbar-collapse-inner {if $filename == 'clientarea'}fixed{/if}">
+			<div class="navbar-collapse-bg"></div>
+			<div class="navbar-collapse-icon">
+				<i class="alico icon-sm icon-list-open"></i>
+				<i class="alico icon-sm icon-list-close"></i>
+			</div>
+		</div>
+	    <div class="sub-menu {if $filename == 'clientarea'}fixed{/if}">
+	        {include file="$template/includes/sidebar.tpl" sidebar=$primarySidebar}
+	    </div>
+	    <div class="main-content {if $filename == 'clientarea'}fixed{/if}">
+		<section id="main-body" class="content content--border">
 {/if}       

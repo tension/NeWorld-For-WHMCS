@@ -8,6 +8,14 @@ jQuery(document).ready(function() {
     "use strict";
     handlePackageSwitcher();
     ShowMoeny();
+	
+	//Sub-menu
+    jQuery(".navbar-collapse-inner").click(function() {
+	    jQuery(".sub-menu").toggleClass('fixed');
+	    jQuery(".main-content").toggleClass('fixed');
+	    jQuery(this).toggleClass('fixed');
+    });
+    
     // Left-Menu
     jQuery(".menu .item").click(function() {
         if (jQuery(this).hasClass("active")) {
@@ -30,6 +38,7 @@ jQuery(document).ready(function() {
     });
     // Secect-Picker
     jQuery('select').addClass('selectpicker');
+    
     //Copy Affili
     jQuery("#updatelanding").zclip({
         path: "ZeroClipboard.swf",
@@ -43,26 +52,7 @@ jQuery(document).ready(function() {
             jQuery(".copy-tips").fadeOut(10000);
         }
     });
-    // Language chooser popover
-    jQuery('.language').popover({
-        container: 'body',
-        placement: 'top',
-        template: '<div class="popover language-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>',
-        html: true,
-        content: function() {
-            return jQuery("#languageChooserContent").html();
-        },
-    });
-    // Language chooser popover
-    jQuery('#languageChooser').popover({
-        container: 'body',
-        placement: 'bottom',
-        template: '<div class="popover language-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>',
-        html: true,
-        content: function() {
-            return jQuery("#languageChooserContent").html();
-        },
-    });
+    
     // Login or register popover
     jQuery('#loginOrRegister').popover({
         container: 'body',

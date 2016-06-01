@@ -1,5 +1,6 @@
 {if $templatefile != 'homepage'}
 </section>
+</div>
 {/if}
 
 {include file="$template/NeWorld/NeWorld-footer.tpl" title=$displayTitle desc=$tagline}
