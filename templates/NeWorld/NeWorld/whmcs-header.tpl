@@ -71,19 +71,15 @@
 			                <li><a href="knowledgebase.php">{$LANG.knowledgebasetitle}</a></li>
 			            </ul>
 			        </li>
-			        <li class="item {if $templatefile == 'clientareadetails' || $templatefile == 'clientareacontacts' || $templatefile == 'clientareachangepw'} active{/if}">
+			        <li class="item {if $templatefile == 'clientareadetails' || $templatefile == 'clientareacontacts' || $templatefile == 'clientareachangepw' || $templatefile == 'clientareaemails'} active{/if}">
 			            <a href="javascript:;"><i class="alico icon-account-2"></i>{$LANG.account}<span class="fa fa-caret-down"></span>
 				        </a>
 			            <ul>
 			                <li><a href="clientarea.php?action=details">{$LANG.clientareanavdetails}</a></li>
-			                <li><a href="clientarea.php?action=contacts">{$LANG.clientareanavcontacts}</a></li>			                	<li><a href="clientarea.php?action=changepw">{$LANG.clientareanavchangepw}</a></li>
+			                <li><a href="clientarea.php?action=contacts">{$LANG.clientareanavcontacts}</a></li>			                							<li><a href="clientarea.php?action=changepw">{$LANG.clientareanavchangepw}</a></li>
+							<li><a href="clientarea.php?action=emails">{$LANG.navemailssent}</a></li>
 			            </ul>
 			        </li>
-					<li class="item {if $templatefile == 'clientareaemails'}active{/if}">
-						<a href="clientarea.php?action=emails">
-							<i class="alico icon-invite"></i>{$LANG.navemailssent}
-						</a>
-					</li>
 			        {/if}
 			        <li class="item {if $templatefile == 'announcements'}active{/if}">
 			        	<a href="announcements.php">
