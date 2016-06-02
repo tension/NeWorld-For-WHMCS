@@ -1744,7 +1744,7 @@ $_LANG['outOfStockProductRemoved'] = "An out of stock product was automatically 
 
 $_LANG['subaccountpermsquotes'] = "View & Accept Quotes";
 
-$_LANG['chooselanguage'] = "Choose language";
+$_LANG['chooselanguage'] = "language";
 
 $_LANG['success'] = "Success";
 $_LANG['error'] = "Error";
@@ -2088,10 +2088,11 @@ $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
 
 ////////// End of english language file.  Do not place any translation strings below this line!
 
+////////// NeWorld Theme
 $_LANG['save'] = "Save";
-$_LANG['features'] = "Features";
-$_LANG['pricing'] = "Pricing";
-$_LANG['hosting'] = "Hosting";
+$_LANG['themes'] = "themes";
+$_LANG['modules'] = "modules";
+$_LANG['forum'] = "forum";
 $_LANG['getitnow'] = "Get it Now";
 $_LANG['ram'] = "Ram";
 $_LANG['learnmore'] = "Learn More";
@@ -2110,3 +2111,7 @@ $_LANG['chooseproduct'] = "Choose Product";
 $_LANG['summary'] = "Summary";
 $_LANG['noaccount'] = "Don't have an account yet?";
 $_LANG['demo'] = "DEMO";
+$_LANG['sliderdesc'] = "Fully responsive Website Template fully integrated in WHMCS client area for Web Hosting Providers with 5 additional pages which are included within WHMCS by using WHMCS additional pages, You just need to edit .tpl files for contents modification.";
+$_LANG['whatis'] = "What is NeWorld";
+$_LANG['whatisdesc'] = "Responsive design, accord with the W3C standards, using CSS 3, HTML 5 production based on WHMCS version 6, the user center for new production";
+$_LANG['homeannouncements'] = "announcements：";
