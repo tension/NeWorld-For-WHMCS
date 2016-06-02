@@ -3835,15 +3835,18 @@ table.dataTable thead .sorting_desc:after {
         display: none;
     }
     .navbar-collapse-inner {
-	    left: 160px;
+	    left: 0;
     }
     .navbar-collapse-inner.fixed {
-	    left: 0;
+	    left: 160px;
     }
     .sub-menu {
+	    left: -180px;
+    }
+    .sub-menu.fixed {
 	    left: 0;
     }
-	.main-content {
+	.main-content.fixed {
 		left: 0;
 		width: 100%;
 	}
