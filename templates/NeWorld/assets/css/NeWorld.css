@@ -3834,6 +3834,19 @@ table.dataTable thead .sorting_desc:after {
     .header-nav .breadcrumb li.active:before {
         display: none;
     }
+    .navbar-collapse-inner {
+	    left: 160px;
+    }
+    .navbar-collapse-inner.fixed {
+	    left: 0;
+    }
+    .sub-menu {
+	    left: 0;
+    }
+	.main-content {
+		left: 0;
+		width: 100%;
+	}
 	
 }
 @media (min-width: 768px) {
