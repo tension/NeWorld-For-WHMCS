@@ -2230,22 +2230,22 @@ svg #stripe path {
     background-color: #EAEDF2;
     position: fixed;
     top: 70px;
-    left: 200px;
+    left: 0;
     bottom: 0px;
     z-index: 2;
     overflow: hidden;
     transition: all 0.2s ease;
 }
 .sub-menu.fixed {
-	left: -180px;
+	left: 200px;
     transition: all 0.2s ease;
 }
 .navbar-collapse-inner.fixed {
-	left: 200px;
+	left: 360px;
 }
 .navbar-collapse-inner {
 	position: fixed;
-	left: 360px;
+	left: 200px;
 	top: 50%;
 	height: 50px;
 	color: #333;
@@ -2253,10 +2253,10 @@ svg #stripe path {
 	z-index: 3;
 }
 .navbar-collapse-inner.fixed .navbar-collapse-bg {
-    border-bottom: 9px solid transparent;
-    border-left: 20px solid #EAEDF2;
-    border-top: 9px solid transparent;
-    border-right: none;
+	border-bottom: 8px solid transparent;
+    border-right: 20px solid #f1f4f8;
+    border-top: 8px solid transparent;
+    border-left: none;
 }
 .navbar-collapse-bg {
     width: 20px;
@@ -2264,9 +2264,9 @@ svg #stripe path {
     position: absolute;
     top: 0;
     left: 0;
-	border-bottom: 8px solid transparent;
-    border-right: 20px solid #f1f4f8;
-    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 20px solid #EAEDF2;
+    border-top: 9px solid transparent;
 }
 .navbar-collapse-icon {
 	color: #666;
@@ -2279,11 +2279,11 @@ svg #stripe path {
 }
 .navbar-collapse-inner.fixed .icon-list-open,
 .navbar-collapse-icon .icon-list-close {
-	display: block;
+	display: none;
 }
 .navbar-collapse-inner.fixed .icon-list-close,
 .navbar-collapse-icon .icon-list-open {
-	display: none;
+	display: block;
 }
 .sub-menu .panel-default {
 	border-color: transparent;
@@ -2313,13 +2313,12 @@ svg #stripe path {
 	background-color: #FFF;
 }
 .main-content.fixed {
-	width: 100%;
-	left: 0;
-}
-.main-content {
-	width: 88%;
+	width: 86%;
 	position: absolute;
 	left: 180px;
+}
+.main-content {
+	width: 100%;
 }
 .right-content .main-content .content {
     min-height: calc(100vh);
