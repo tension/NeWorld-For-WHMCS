@@ -2006,9 +2006,8 @@ $_LANG['errorButTryAgain'] = "错误发生，请重试。";
 
 ////////// NeWorld Theme
 $_LANG['save'] = "优惠";
-$_LANG['themes'] = "主题界面";
-$_LANG['modules'] = "插件模块";
-$_LANG['forum'] = "讨论社区";
+$_LANG['features'] = "产品特色";
+$_LANG['pricing'] = "价格中心";
 $_LANG['getitnow'] = "立刻购买";
 $_LANG['ram'] = "内存";
 $_LANG['learnmore'] = "查看详情";

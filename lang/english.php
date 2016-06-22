@@ -2090,9 +2090,8 @@ $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
 
 ////////// NeWorld Theme
 $_LANG['save'] = "Save";
-$_LANG['themes'] = "themes";
-$_LANG['modules'] = "modules";
-$_LANG['forum'] = "forum";
+$_LANG['features'] = "features";
+$_LANG['pricing'] = "pricing";
 $_LANG['getitnow'] = "Get it Now";
 $_LANG['ram'] = "Ram";
 $_LANG['learnmore'] = "Learn More";
