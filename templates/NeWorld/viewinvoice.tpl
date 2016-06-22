@@ -11,14 +11,12 @@
     <link href="{$BASE_PATH_CSS}/font-awesome.min.css" rel="stylesheet">
 
     <!-- Styling -->
-    <link href="templates/{$template}/css/overrides.css" rel="stylesheet">
-    <link href="templates/{$template}/css/styles.css" rel="stylesheet">
-    <link href="templates/{$template}/css/invoice.css" rel="stylesheet">
+    <link href="templates/{$template}/assets/css/invoice.css" rel="stylesheet">
 
 </head>
 <body>
 
-    <div class="container-fluid invoice-container">
+    <div class="container invoice-container">
 
         {if $invalidInvoiceIdRequested}
 
