@@ -18,7 +18,7 @@ function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
     // The number of days to wait between performing remote license checks
     $localkeydays = 180;
     // The number of days to allow failover for after local key expiry
-    $allowcheckfaildays = 365;
+    $allowcheckfaildays = 30;
 
     // -----------------------------------
     //  -- Do not edit below this line --
