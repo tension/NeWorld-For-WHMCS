@@ -11,14 +11,14 @@ function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
     // -----------------------------------
 
     // Enter the url to your WHMCS installation here
-    $whmcsurl = 'https://www.neworld.org/';
+    $whmcsurl = 'https://neworld.org/';
     // Must match what is specified in the MD5 Hash Verification field
     // of the licensing product that will be used with this check.
     $licensing_secret_key = 'teNsi0n';
     // The number of days to wait between performing remote license checks
-    $localkeydays = 7;
+    $localkeydays = 180;
     // The number of days to allow failover for after local key expiry
-    $allowcheckfaildays = 5;
+    $allowcheckfaildays = 365;
 
     // -----------------------------------
     //  -- Do not edit below this line --
@@ -163,6 +163,8 @@ function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
     unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
     return $results;
 }
+
+$localkey = '2bDEbLaNZgYnEXGWyCpuuLF6jxpHdMLzqwoErmWLTRkufPkUyLxAvTtbdmbtd4TfjuxUDVhCcuKDgcxZdEPyUtjWTaTPegRMv9ogAjbUtsKNrgAwgRZibeLYsJsDvoLnNQEtgTN3jn4rjmfstdxoHg6puQpANHpxHMATjBBtcUmAYyCUoh4hBHFZrVDRRCGRxqFiBojkWmaGdJXiTuVDoanfwRfjfRmHdwcNBxDMJWwYfQCqdezvNUWb93BmEJyeqfKqtshWrwrG8XAbWYFaaxwWuxmPTG8XyzvKDhxkEnYJpKXeZWJpMmisKMYoedymAFfTBnoorYfEKpb6nKZ7xwQiVtkAAomAhcuEUpRBzCPcEMGasCA4yfcZtnqffDancvodcsNZHF8HQaUVnQKV2rxrvRUKeMtP9WUrQXzywLuubrjybnXYrrmmEbiQvinzwduPsQA4U8HynpnGGxWbhcJgYMmGJYmmtEnQuKMHdKQVaatJhoGk';
 
 // Validate the license key information
 $results = NeWorld_Prefix_Check_License($NeWorld_license, $localkey);
