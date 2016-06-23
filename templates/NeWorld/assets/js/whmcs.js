@@ -377,7 +377,12 @@ var ShowMoeny = function() {
         var moeny = jQuery('.mymoeny').data('money');
         var val = moeny.split('.');
         jQuery('.mymoeny').html(val[0]);
+        var smallmoney = val[1].split('元');
+        jQuery('.user-balance-small').html('.' + smallmoney[0]);
     };
+    //if (jQuery(':lang(en_GB)')) {
+	//    jQuery('.suffix').html('RMB');
+    //}
 };
 var handlePackageSwitcher = function() {
     "use strict";
