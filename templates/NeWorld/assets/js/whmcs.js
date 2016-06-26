@@ -53,6 +53,17 @@ jQuery(document).ready(function() {
         }
     });
     
+    // Language chooser popover
+    jQuery('#languageChooser').popover({
+        container: 'body',
+        placement: 'bottom',
+        template: '<div class="popover language-popover" role="tooltip"><div class="arrow"></div><div class="popover-content"></div></div>',
+        html: true,
+        content: function() {
+            return jQuery("#languageChooserContent").html();
+        },
+    });
+    
     // Login or register popover
     jQuery('#loginOrRegister').popover({
         container: 'body',
