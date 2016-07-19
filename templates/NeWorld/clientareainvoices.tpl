@@ -40,7 +40,7 @@
                     <td class="hidden-xs hidden-sm">{$invoice.invoicenum}</td>
                     <td class="hidden-xs"><span class="hidden">{$invoice.normalisedDateCreated}</span>{$invoice.datecreated}</td>
                     <td><span class="hidden">{$invoice.normalisedDateDue}</span>{$invoice.datedue}</td>
-                    <td><span class="mymoeny" data-money="{$invoice.total}">0</span><span class="user-balance-small ng-binding hidden-xs">.00</span></td>
+                    <td>{$invoice.total}</td>
                     <td><span class="label status status-{$invoice.statusClass}">{$invoice.status}</span></td>
                     <td class="responsive-edit-button" style="display: none;">
                         <a href="viewinvoice.php?id={$invoice.id}" class="btn btn-block btn-info">
