@@ -10,8 +10,8 @@
 <script src="{$BASE_PATH_JS}/jquery.min.js"></script>
 
 <!-- Custom Styling -->
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/custom.css?v0.2.6">
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/color.css?v0.2.6">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/custom.css?v0.2.8">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/color.css?v0.2.8">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
