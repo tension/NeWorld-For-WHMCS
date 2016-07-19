@@ -186,6 +186,10 @@ div.header-lined small {
  * @section Login Page
  * -------------------------
  */
+.login .loginform {
+	max-width: 400px;
+	margin: 0 auto;	 
+}
 .login .navbar-brand {
     text-align: center;
     line-height: 42px;
@@ -199,18 +203,8 @@ div.header-lined small {
     font-family: Raleway, Verdana, Tahoma, sans-serif;
 }
 .logincontainer {
-    margin: 0;
+    margin: 110px 0;
     padding: 20px 10px 0;
-    width: 400px;
-    z-index: 9999;
-    height: auto;
-	position: fixed;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
 }
 .logincontainer .login-content {
 	position: relative;
@@ -256,6 +250,64 @@ div.header-lined small {
 .logincontainer .nav a {
 	color: #FFF;
 	opacity: 1;
+}
+.logincontainer .line {
+    position: relative;
+    margin-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.logincontainer .line span {
+    z-index: 1;
+    position: relative;
+    padding: 0 10px;
+    background-color: #FFF;
+}
+.logincontainer .line:after {
+    content: '';
+    height: 1px;
+    background-color: #DDD;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: 0;
+}
+.logincontainer .btn.btn-block {
+}
+.logincontainer .btn.btn-block .fa {
+	margin-right: 5px;
+	font-size: 16px;
+}
+.btn-wechat {
+	color: #FFF;
+	background-color: #2EB02F;
+}
+.btn-wechat:hover,
+.btn-wechat:focus {
+	color: #2EB02F;
+	border-color: #2EB02F;
+	background-color: #FFF;
+}
+.btn-qq {
+	color: #FFF;
+    background-color: #70A9DD;
+}
+.btn-qq:hover,
+.btn-qq:focus {
+	color: #70A9DD;
+	border-color: #70A9DD;
+    background-color: #FFF;
+}
+.btn-weibo {
+	color: #FFF;
+    background-color: #dc3246;
+}
+.btn-weibo:hover,
+.btn-weibo:focus {
+	color: #dc3246;
+	border-color: #dc3246;
+    background-color: #FFF;
 }
 
 @media (max-width: 600px) {
@@ -405,10 +457,9 @@ section#home-banner h2 {
 }
 .client-home-panels .panel-body .list-group-item {
 	border: 0 none;
-	border-bottom: 1px solid #EDEEF1;
 }
-.client-home-panels .panel-body .list-group-item:last-child {
-	border-radius: 0;
+.list-group a:last-child {
+	border-radius: 0 0 4px 4px;
 }
 
 .client-home-panels .panel > .panel-heading {
