@@ -22,10 +22,10 @@
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
 	                <ul class="nav navbar-nav navbar-right">
 	                    <li {if $templatefile == 'features'} class="active"{/if}>
-	                    	<a href="/features/">{$LANG.features}</a>
+	                    	<a href="{$systemurl}features.php">{$LANG.features}</a>
 	                    </li>
 	                    <li {if $templatefile == 'pricing'} class="active"{/if}>
-	                    	<a href="/pricing/">{$LANG.pricing}</a>
+	                    	<a href="{$systemurl}pricing.php">{$LANG.pricing}</a>
 	                    </li>
 	                    <li class="dropdown{if $templatefile == 'vps'} active{/if}">
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$LANG.hosting} <span class="caret"></span></a>
@@ -35,48 +35,48 @@
 	
 	                            <li><a href="/sharehosting/"><i class="fa fa-group"></i> Shared Hosting</a></li>
 	
-	                            <li><a href="/vps/"><i class="fa fa-cloud"></i> VPS Hosting</a></li>
+	                            <li><a href="{$systemurl}vps.php"><i class="fa fa-cloud"></i> VPS Hosting</a></li>
 	
 	                            <li><a href="/dedicated/"><i class="fa fa-server"></i> Dedicated Hosting</a></li>
 	                        </ul>
 	                    </li>
 	                    <li {if $templatefile == 'contact'} class="active"{/if}>
-	                    	<a href="/contact.php">{$LANG.homecontact}</a>
+	                    	<a href="{$systemurl}contact.php">{$LANG.homecontact}</a>
 	                    </li>
 					{if $loggedin}
 	                    <li>
-	                        <a href="/clientarea.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$clientsdetails.lastname}{$clientsdetails.firstname} <span class="caret"></span></a>
+	                        <a href="{$systemurl}clientarea.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$clientsdetails.lastname}{$clientsdetails.firstname} <span class="caret"></span></a>
 	
 	                        <ul class="dropdown-menu">
 		                        <li>
-		                        	<a href="/clientarea.php"><i class="md md-home"></i> {$LANG.clientareatitle}</a>
+		                        	<a href="{$systemurl}clientarea.php"><i class="md md-home"></i> {$LANG.clientareatitle}</a>
 		                        </li>
 		                        <li>
-		                        	<a href="/clientarea.php?action=details"><i class="md md-face-unlock"></i> {$LANG.clientareanavdetails}</a>
+		                        	<a href="{$systemurl}clientarea.php?action=details"><i class="md md-face-unlock"></i> {$LANG.clientareanavdetails}</a>
 		                        </li>
 				                <li>
-				                	<a href="/clientarea.php?action=contacts"><i class="md md-account-box"></i> {$LANG.clientareanavcontacts}</a>
+				                	<a href="{$systemurl}clientarea.php?action=contacts"><i class="md md-account-box"></i> {$LANG.clientareanavcontacts}</a>
 				                </li>
 				                <li>
-				                	<a href="/clientarea.php?action=changepw"><i class="md md-settings"></i> {$LANG.clientareanavchangepw}</a>
+				                	<a href="{$systemurl}clientarea.php?action=changepw"><i class="md md-settings"></i> {$LANG.clientareanavchangepw}</a>
 				                </li>
 				                {if $condlinks.updatecc}
 				                <li>
-				                	<a href="/clientarea.php?action=creditcard"><i class="md md-credit-card"></i>{$LANG.navmanagecc}</a>
+				                	<a href="{$systemurl}clientarea.php?action=creditcard"><i class="md md-credit-card"></i>{$LANG.navmanagecc}</a>
 				                </li>
 				                {/if}
 								{if $condlinks.addfunds}
 								<li>
-									<a href="/clientarea.php?action=addfunds"><i class="md md-account-balance-wallet"></i> {$LANG.addfunds}</a>
+									<a href="{$systemurl}clientarea.php?action=addfunds"><i class="md md-account-balance-wallet"></i> {$LANG.addfunds}</a>
 								</li>
 								{/if}
-								<li><a href="/logout.php"><i class="md md-settings-power"></i>{$LANG.logouttitle}</a></li>
+								<li><a href="{$systemurl}logout.php"><i class="md md-settings-power"></i>{$LANG.logouttitle}</a></li>
 	                        </ul>
 	                    </li>
-						<li><a href="/cart.php?a=view" class="btn btn-border"><i class="fa fa-shopping-cart"></i><span id="cartItemCount" class="badge badge-danger">{$cartitemcount}</span></a></li>
+						<li><a href="{$systemurl}cart.php?a=view" class="btn btn-border"><i class="fa fa-shopping-cart"></i><span id="cartItemCount" class="badge badge-danger">{$cartitemcount}</span></a></li>
 					{else}
-						<li><a href="/login.php">{$LANG.clientlogin}</a></li>
-						<li class="hidden-sm"><a href="/register.php" class="btn btn-border">{$LANG.clientregistertitle}</a></li>
+						<li><a href="{$systemurl}login.php">{$LANG.clientlogin}</a></li>
+						<li class="hidden-sm"><a href="{$systemurl}register.php" class="btn btn-border">{$LANG.clientregistertitle}</a></li>
 					{/if}
 	                </ul>
 	            </div><!-- /.navbar-collapse -->
