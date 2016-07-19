@@ -43,6 +43,6 @@ if ($ca->isLoggedIn()) {
  
 # Define the template filename to be used without the .tpl extension
 
-$ca->setTemplate('vps');
+$ca->setTemplate('tos');
  
 $ca->output();
