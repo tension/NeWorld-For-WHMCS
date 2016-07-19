@@ -1,4 +1,237 @@
 @font-face {
+    font-family: 'icons';
+    src:url('../fonts/icons.eot?kah05e');
+    src:url('../fonts/icons.eot?kah05e#iefix') format('embedded-opentype'),
+        url('../fonts/icons.ttf?kah05e') format('truetype'),
+        url('../fonts/icons.woff?kah05e') format('woff'),
+        url('../fonts/icons.svg?kah05e#apps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icons {
+    display: inline-block;
+    color: #1e88e5;
+    font-family: 'icons';
+    font-size: 24px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-xs {
+    height: 18px;
+    width: 18px;
+    font-size: 18px;
+}
+.icon-sm {
+    height: 28px;
+    width: 28px;
+    font-size: 28px !important;
+}
+.icon-lg {
+    height: 50px;
+    width: 50px;
+    font-size: 48px;
+}
+.icon-xlg {
+    height: 68px;
+    width: 68px;
+    font-size: 68px;
+}
+.icon-os {
+    color: #1e88e5;
+}
+/* icons from designer */
+.icon-apache:before {
+    content: "\e900";
+}
+.icon-joomla:before {
+    content: "\e901";
+}
+.icon-docker:before {
+    content: "\e902";
+}
+.icon-controller:before {
+    content: "\e903";
+}
+.icon-workstation:before {
+    content: "\e904";
+}
+.icon-server:before {
+    content: "\e905";
+}
+.icon-nodejs:before {
+    content: "\e906";
+}
+.icon-debian:before {
+    content: "\e907";
+}
+.icon-mysql:before {
+    content: "\e908";
+}
+.icon-centos:before {
+    content: "\e909";
+}
+.icon-ubuntu:before {
+    content: "\e90a";
+}
+.icon-windows:before {
+    content: "\e90b";
+}
+.icon-linux:before {
+    content: "\e90c";
+}
+.icon-wordpress:before {
+    content: "\e90d";
+}
+.icon-webmin:before {
+    content: "\e90e";
+}
+.icon-owncloud:before {
+    content: "\e90f";
+}
+.icon-minecraft:before {
+    content: "\e910";
+}
+.icon-lemp:before {
+    content: "\e911";
+}
+.icon-drupal:before {
+    content: "\e912";
+}
+.icon-cpanel:before {
+    content: "\e913";
+}
+.icon-openvpn:before {
+    content: "\e914";
+}
+.icon-helping-hand:before {
+    content: "\e915";
+}
+.icon-globe:before {
+    content: "\e916";
+}
+.icon-realtime-protection:before {
+    content: "\e917";
+}
+.icon-last-hour:before {
+    content: "\e918";
+}
+.icon-admin-tools:before {
+    content: "\e919";
+}
+.icon-multiple-devices:before {
+    content: "\e91a";
+}
+.icon-broadcasting:before {
+    content: "\e91b";
+}
+.icon-electronics:before {
+    content: "\e91c";
+}
+.icon-infinity:before {
+    content: "\e91d";
+}
+.icon-settings:before {
+    content: "\e91e";
+}
+.icon-agreement:before {
+    content: "\e91f";
+}
+.icon-processor:before {
+    content: "\e920";
+}
+.icon-download:before {
+    content: "\e921";
+}
+.icon-upload:before {
+    content: "\e922";
+}
+.icon-question:before {
+    content: "\e923";
+}
+.icon-document:before {
+    content: "\e924";
+}
+.icon-message-add:before {
+    content: "\e925";
+}
+.icon-desktop-linux:before {
+    content: "\e926";
+}
+.icon-disc:before {
+    content: "\e927";
+}
+.icon-mouse:before {
+    content: "\e928";
+}
+.icon-location:before {
+    content: "\e929";
+}
+.icon-coreos:before {
+    content: "\e92a";
+}
+.icon-freebsd:before {
+    content: "\e92b";
+}
+.icon-password:before {
+    content: "\e92c";
+}
+.icon-mac_converter:before {
+    content: "\e92d";
+}
+.icon-ipv4_converter:before {
+    content: "\e92e";
+}
+.icon-unixtime_converter:before {
+    content: "\e92f";
+}
+.icon-ipv6_calculator:before {
+    content: "\e930";
+}
+.icon-ipv4_calculator:before {
+    content: "\e931";
+}
+.icon-plus:before {
+    content: "\e932";
+}
+.icon-discover:before {
+    content: "\e933";
+}
+.icon-visa:before {
+    content: "\e934";
+}
+.icon-mastercard:before {
+    content: "\e935";
+}
+.icon-amex:before {
+    content: "\e936";
+}
+.icon-jcb:before {
+    content: "\e937";
+}
+/* custom icons added by vultr team */
+.icon-mac-converter:before {
+    content: "\e92d";
+}
+.icon-ipv4-converter:before {
+    content: "\e92e";
+}
+.icon-unixtime-converter:before {
+    content: "\e92f";
+}
+.icon-ipv6-calculator:before {
+    content: "\e930";
+}
+.icon-ipv4-calculator:before {
+    content: "\e931";
+}
+
+@font-face {
     font-family: 'aliyun-console-font';
     src: url("../fonts/aliyun-console-font.eot?igxi2f");
     src: url("../fonts/aliyun-console-font.eot?igxi2f#iefix") format("embedded-opentype"), url("../fonts/aliyun-console-font.ttf?igxi2f") format("truetype"), url("../fonts/aliyun-console-font.woff?igxi2f") format("woff"), url("../fonts/aliyun-console-font.svg?igxi2f#aliyun-console-font") format("svg");
