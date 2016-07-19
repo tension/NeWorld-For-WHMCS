@@ -17,11 +17,11 @@ input,
 button,
 select,
 textarea {
-  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', Raleway, Verdana, Tahoma, serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #EFF3F5;
+	font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Microsoft YaHei', Raleway, Verdana, Tahoma, serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #EFF3F5;
 }
 
 h1,
@@ -30,8 +30,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', Raleway, Verdana, Tahoma, serif;
-    font-weight: 200;
+	font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Microsoft YaHei', Raleway, Verdana, Tahoma, serif;
+    font-weight: 300;
 }
 .navbar-main .navbar-brand {
     padding: 0;
@@ -46,6 +46,7 @@ h6 {
     margin-top: 13px;
 	margin-left: 0 !important;
     margin-right: 10px;
+    font-family: Raleway, sans-serif;
 }
 .navbar-main .navbar-brand:hover {
 	background-color: #FFF;
@@ -86,8 +87,6 @@ h6 {
     margin-left: -15px;
     margin-right: -15px;
 }
-
-
 .panel-default > .panel-heading {
     background-color: #fafafa;
     border-bottom: none;
@@ -105,6 +104,7 @@ h6 {
 	border-color: #DFE3E8;
 	box-shadow: none;
 	color: rgba(53,64,82,.8);
+	transition: none;
 }
 .form-control:focus {
 	border-color: #8c98a9;
@@ -117,36 +117,6 @@ h6 {
     background: #fff;
     border: 1px solid #E7E9EC;
     transition: all 0.4s;
-}
-.btn-primary {
-	border: 0 none;
-	background-color: #2ea1f8;
-	background-image: linear-gradient(#2ea1f8,#1991eb);
-}
-.btn-primary:hover {
-	background-color: #2084cf;
-	background-image: linear-gradient(#2084cf,#1484d7);
-}
-.btn-primary:active {
-	box-shadow: none;
-	background-color: #196caa;
-	background-image: linear-gradient(#196caa,#0c73c1);
-}
-.btn-default {
-    color: #333c48 !important;
-    border: 1px solid #dfe3e9;
-    background-color: #fff;
-    background: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
-}
-.btn-default:hover {
-    border: 1px solid #dfe3e9;
-    background-color: #f7f9fc;
-    background-image: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
-}
-.btn-default:active {
-    border: 1px solid #dfe3e9;
-    background-color: #f7f9fc;
-    background-image: linear-gradient(to top, rgba(197,208,222,0.08) 0%, rgba(255,255,255,0) 99%, rgba(255,255,255,0) 100%);
 }
 .has-warning .form-control {
     border-color: #ffd740;
@@ -226,10 +196,6 @@ input[type='file'].form-control {
  * We use a larger font-size than the bootstrap default, which requires an increase 
  * in the top offset to maintain correct alignment in form control feedback. 
  */
-.has-feedback label ~ .form-control-feedback {
-    top: 27px !important;
-}
-
 .list-group-item > i.fa.fa-circle-o {
     color: #808080;
 }
