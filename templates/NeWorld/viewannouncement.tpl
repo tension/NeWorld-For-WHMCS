@@ -13,7 +13,7 @@
 {$text}
 
 <p class="text-right">
-	<strong style="display: block">NeWorld Team</strong>
+	<strong style="display: block">{$companyname}</strong>
     <strong>{$timestamp|date_format:"Y-m-d"}</strong>
 </p>
 
