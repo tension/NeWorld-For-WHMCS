@@ -115,7 +115,7 @@
 
 <div class="client-home-panels">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-6">
 
             {function name=outputHomePanels}
                 <div menuItemName="{$item->getName()}" class="panel panel-default"{if $item->getAttribute('id')} id="{$item->getAttribute('id')}"{/if}>
@@ -173,7 +173,7 @@
             {/foreach}
 
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-6">
 
             {foreach $panels as $item}
                 {if $item@iteration is even}
