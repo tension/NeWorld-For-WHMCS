@@ -1,6 +1,6 @@
 <section class="loginform">
 	<div class="row">
-		<div class="logincontainer col-sm-4">
+		<div class="logincontainer col-sm-12">
 			<a class="navbar-brand" href="{$WEB_ROOT}/index.php" title="{$companyname}">{$companyname}</a>
 			<div class="login-content" style="padding-bottom: 20px;">
 			    {if $invalidlink}

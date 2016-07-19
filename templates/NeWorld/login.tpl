@@ -1,6 +1,6 @@
 <section class="loginform">
 	<div class="row">
-		<div class="logincontainer col-sm-12 col-md-4">
+		<div class="logincontainer col-sm-12">
 			
 			<a class="navbar-brand" href="{$WEB_ROOT}/index.php" title="{$companyname}">{$companyname}</a>
 			
