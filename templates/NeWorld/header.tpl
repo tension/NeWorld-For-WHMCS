@@ -75,8 +75,8 @@ TEL: 18910030001 MAIL:tension@me.com -->
 		<div class="navbar-collapse-inner">
 			<div class="navbar-collapse-bg"></div>
 			<div class="navbar-collapse-icon">
-				<i class="alico icon-sm icon-list-open"></i>
-				<i class="alico icon-sm icon-list-close"></i>
+				<i class="alico icon-list-open"></i>
+				<i class="alico icon-list-close"></i>
 			</div>
 		</div>
 	    <div class="sub-menu">
