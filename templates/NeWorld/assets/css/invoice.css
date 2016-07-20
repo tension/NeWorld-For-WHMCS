@@ -12,26 +12,104 @@
  */
 
 body {
-    background-color: #efefef;
+	font-family: "proxima-nova", Verdana, Tahoma, sans-serif;
+    background-color: #ECEFF4;
+}
+.container {
+    margin: 75px auto;
+    max-width: 850px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.logo {
+	margin-top: 0;
+	font-weight: 300;
+    font-family: Raleway, sans-serif;
+}
+.header {
+	background-color: #F4F5F9;
+	padding: 45px;
+	border-radius: 6px 6px 0 0;
+}
+.footer {
+	background-color: #F4F5F9;
+	padding: 45px;
+	border-radius: 0 0 6px 6px;
+}
+p.black {
+	font-weight: 300;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+	font-size: 25px;
+}
+p.gery {
+	color: #96999e;
+	margin-bottom: 0;
+}
+.mrb10 {
+    margin-bottom: 10px;
+    display: block;
+}
+.gray {
+	color: #BBB;
+}
+.green {
+	color: #33c46f;
+}
+.font20 {
+	font-size: 20px;
+}
+.invoice-total {
+	padding: 45px;
+}
+.invoice-total span {
+	min-width: 120px;
+	display: inline-block;
+}
+.contets .table {
+	margin-bottom: 0;
+}
+.contets .table>tbody>tr>td {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: none;
+	border-bottom: 1px solid #F9F9F9;
+}
+.contets .table>tbody>tr>td:first-child,
+.transactions-container .table>tbody>tr>td:first-child,
+.transactions-container .table>thead>tr>td:first-child {
+	padding-left: 45px;
+}
+.contets .table>tbody>tr>td:last-child,
+.transactions-container .table>tbody>tr>td:last-child,
+.transactions-container .table>thead>tr>td:last-child {
+	padding-right: 45px;
+}
+.transactions-container .table tr td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: none;
+	border-bottom: 1px solid #F9F9F9;
+}
+.transactions-container .table tr:last-child td {
+	border-bottom: 0 none;
+}
+.transactions-container .table>thead>tr>td {
+	background-color: #F9F9F9;
 }
 
 /* Container Responsive Behaviour */
 
 .invoice-container {
-    margin: 15px auto;
-    padding: 70px;
-    max-width: 850px;
     background-color: #fff;
-    border: 1px solid #ccc;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -o-border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 895px) {
     .invoice-container {
-        margin: 15px;
+        margin: 35px;
     }
 }
 @media (max-width: 767px) {
