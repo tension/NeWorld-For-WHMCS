@@ -12,6 +12,7 @@
  */
 
 body {
+	font-size: 14px;
 	font-family: "proxima-nova", Verdana, Tahoma, sans-serif;
     background-color: #ECEFF4;
 }
@@ -22,6 +23,7 @@ body {
 	padding-right: 10px;
 }
 .logo {
+	color: #131313;
 	margin-top: 0;
 	font-weight: 300;
     font-family: Raleway, sans-serif;
@@ -56,8 +58,14 @@ p.gery {
 .green {
 	color: #33c46f;
 }
+.font16 {
+	font-size: 16px;
+}
 .font20 {
 	font-size: 20px;
+}
+.fontweight300 {
+	font-weight: 300;
 }
 .invoice-total {
 	padding: 45px;
@@ -156,12 +164,6 @@ p.gery {
 }
 .invoice-container .payment-btn-container table {
     margin: 0 auto;
-}
-
-/* Text Formatting */
-
-.invoice-container .small-text {
-    font-size: 0.9em;
 }
 
 /* Invoice Items Table Formatting */

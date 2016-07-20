@@ -11,19 +11,21 @@
     <link href="{$BASE_PATH_CSS}/font-awesome.min.css" rel="stylesheet">
 
     <!-- Styling -->
-	<link href="templates/{$template}/assets/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="templates/{$template}/assets/css/select2.min.css" rel="stylesheet">
     <link href="templates/{$template}/assets/css/invoice.css" rel="stylesheet">
 	
 	<!-- jQuery -->
 	<script src="{$BASE_PATH_JS}/jquery.min.js"></script>
-	<script src="templates/{$template}/assets/js/bootstrap-select.min.js"></script>
+	<script src="templates/{$template}/assets/js/select2.min.js"></script>
 
 </head>
 <body>
 
 <script>
-$(document).ready(function() {
-	$('select').addClass('selectpicker');
+$(function () {
+	$('select').select2({
+		minimumResultsForSearch: Infinity
+	});
 });
 </script>
 
@@ -63,7 +65,7 @@ $(document).ready(function() {
 	                    </div>
 	                    
 	                    {if $status eq "Unpaid" || $status eq "Draft"}
-	                        <div class="small-text">
+	                        <div>
 	                            {$LANG.invoicesdatedue}: {$datedue}
 	                        </div>
 	                    {/if}
@@ -124,7 +126,7 @@ $(document).ready(function() {
                         <tbody>
                             {foreach from=$invoiceitems item=item}
                                 <tr>
-                                    <td>{$item.description}{if $item.taxed eq "true"} *{/if}</td>
+                                    <td class="font16 fontweight300">{$item.description}{if $item.taxed eq "true"} *{/if}</td>
                                     <td class="text-right green">{$item.amount}</td>
                                 </tr>
                             {/foreach}
@@ -201,13 +203,13 @@ $(document).ready(function() {
 	            <div class="row">
 	                <div class="col-sm-4 pull-sm-right text-right-sm">
 	                    <strong class="gray mrb10">{$LANG.invoicespayto}:</strong>
-	                    <address class="small-text">
+	                    <address>
 	                        {$payto}
 	                    </address>
 	                </div>
 	                <div class="col-sm-4">
 	                    <strong class="gray mrb10">{$LANG.invoicesinvoicedto}:</strong>
-	                    <address class="small-text">
+	                    <address>
 	                        {if $clientsdetails.companyname}{$clientsdetails.companyname}<br />{/if}
 	                        {$clientsdetails.firstname} {$clientsdetails.lastname}<br />
 	                        {$clientsdetails.address1}, {$clientsdetails.address2}<br />
@@ -222,10 +224,10 @@ $(document).ready(function() {
 	                    </address>
 	                </div>
 	                <div class="col-sm-4">
-	                    <strong>{$LANG.paymentmethod}:</strong><br>
-	                    <span class="small-text">
+	                    <strong class="gray mrb10">{$LANG.paymentmethod}:</strong><br>
+	                    <span>
 	                        {if $status eq "Unpaid" && $allowchangegateway}
-	                            <form method="post" action="{$smarty.server.PHP_SELF}?id={$invoiceid}" class="form-inline">
+	                            <form method="post" action="{$smarty.server.PHP_SELF}?id={$invoiceid}">
 	                                {$gatewaydropdown}
 	                            </form>
 	                        {else}
@@ -251,8 +253,6 @@ $(document).ready(function() {
 		<p class="pull-left hidden-print"><a href="clientarea.php"> <i class="fa fa-angle-double-left" aria-hidden="true"></i> {$LANG.invoicesbacktoclientarea}</a></a></p>
     </div>
 </div>
-
-
 <script src="https://use.typekit.net/jrq2vzx.js"></script>
 <script>try{ Typekit.load({ async: true }); }catch(e){ }</script>
 </body>
