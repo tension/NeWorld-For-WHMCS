@@ -2178,6 +2178,7 @@ svg #stripe path {
     padding: 30px;
 }
 .right-content .header-nav {
+	-webkit-transform: translateZ(0);
 	height: 70px;
     background-color: #fff;
     box-shadow: 0 1px 1px rgba(0,0,0,0.06);
