@@ -170,7 +170,7 @@ $localkey = '2bDEbLaNZgYnEXGWyCpuuLF6jxpHdMLzqwoErmWLTRkufPkUyLxAvTtbdmbtd4Tfjux
 $results = NeWorld_Prefix_Check_License($NeWorld_license, $localkey);
 
 function msg($val,$val2='') {
-	echo '<style>body { background-color: #356AB3 !important;background-image: linear-gradient(#356ab3 0,#5d8ed0 100%); }</style><div class="logincontainer login"><a class="navbar-brand" href="https://www.neworld.org">NeWorld</a><div class="login-content"><div class="alert alert-warning text-center">';
+	echo '<style>body { background-color: #356AB3 !important;background-image: linear-gradient(#356ab3 0,#5d8ed0 100%);}.logincontainer { max-width: 450px;margin: 110px auto 0; }.navbar-brand { font-weight: 300; }</style><div class="logincontainer login"><a class="navbar-brand" href="https://www.neworld.org">NeWorld</a><div class="login-content"><div class="alert alert-warning text-center">';
 	echo $val;
 	echo '</div><div class="foot text-center"><a href="https://www.neworld.org"><strong>支持国产软件发展，购买正版许可</strong></a></div></div></div>';
 }
