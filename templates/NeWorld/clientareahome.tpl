@@ -45,7 +45,7 @@
 }
 @media(max-width:767px) {
 	.home-section-user .user-part-tickets {
-	    background-color: #F2F6FA;
+	    background-color: #F9FAFC;
 	    margin: 0 -10px;
 	    min-height: 179px;
 	}
