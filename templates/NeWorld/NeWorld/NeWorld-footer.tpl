@@ -46,7 +46,7 @@
 				</div>
 				<div class="col-sm-2 hidden-xs hidden-sm">
 					{if $languagechangeenabled && count($locales) > 1}
-			            <a href="javascript:;" class="language" data-toggle="popover">{$LANG.chooselanguage} <span class="caret"></span></a>
+			            <a href="javascript:;" id="languageChooser" class="language" data-toggle="popover">{$LANG.chooselanguage} <span class="caret"></span></a>
 			            <div id="languageChooserContent" class="hidden">
 			                <ul>
 			                    {foreach from=$locales item=locale}
