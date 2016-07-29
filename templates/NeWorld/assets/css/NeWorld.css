@@ -3627,9 +3627,6 @@ table.dataTable thead .sorting_desc:after {
 		float: none !important;
 	    margin-right: 0;
 	}
-	.nav-home .navbar-nav:first-child {
-		margin-left: 0;
-	}
 	.nav-home .navbar-nav.navbar-right {
 		float: none !important;
 		margin-left: 0;
@@ -3801,23 +3798,15 @@ table.dataTable thead .sorting_desc:after {
         height: auto;
     }
     .home-section-user .user-part-header {
-        width: 100%;
-        float: none !important;
-        border-radius: 3px;
-        position: relative;
+        
     }
-    .home-section-user .user-aff {
+    .home-section-user .user-bound {
         margin-bottom: 30px;
-    }
-    .home-section-user .user-part-body {
-        padding: 0 0 30px;
     }
     .home-section-user .user-part-account,
     .home-section-user .user-part-todo {
         float: none;
         width: 100%;
-        padding: 20px 30px;
-        border-bottom: 1px solid #eee;
     }
     .mobile {
         width: 170px;
@@ -3851,7 +3840,6 @@ table.dataTable thead .sorting_desc:after {
 		left: 0;
 		width: 100%;
 	}
-	
 }
 @media (min-width: 768px) {
 
