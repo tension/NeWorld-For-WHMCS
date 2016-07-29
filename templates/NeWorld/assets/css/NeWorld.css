@@ -3310,16 +3310,13 @@ table.dataTable thead .sorting_desc:after {
 }
 .home-section-user {
 	height: 180px;
-    margin: -30px;
+    margin: -31px -20px;
 	position: relative;
 }
 .home-section-user .user-part-header {
-    width: 180px;
-    height: 100%;
+    height: 178px;
     background: #f9fafc;
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin: 1px -10px 0;
     border-radius: 3px 0 0 3px;
 }
 .home-section-user .user-header {
@@ -3329,39 +3326,29 @@ table.dataTable thead .sorting_desc:after {
     display: block;
 }
 .home-section-user .user-header img {
+	height: 50px;
+	width: 50px;
     border-radius: 25px;
     display: block;
     margin: 36px auto 0;
     background-size: 100%;
-    background-color: url('img/default_family.jpg');
 }
 .home-section-user .user-name {
     margin-top: 4px;
     text-align: center;
     font-size: 18px;
 }
-.home-section-user .user-aff {
+.home-section-user .user-bound {
     text-align: center;
     margin-top: 10px;
 }
-.home-section-user .user-aff .fa {
-	color: #666;
-	font-size: 16px;
-	vertical-align: middle;
-}
-.home-section-user .user-part-body {
-    height: 100%;
-    width: 100%;
-    padding-left: 180px;
-}
 .home-section-user .user-part-account,
-.home-section-user .user-part-todo {
-    float: left;
-    width: 33.3333%;
-    height: 100%;
-    padding: 30px;
+.home-section-user .user-part-todo,
+.home-section-user .user-part-tickets {
+    padding: 30px 20px 0;
+    min-height: 180px;
 }
-.home-section-user .user-part-body .user-body-title {
+.home-section-user .user-body-title {
     margin: 6px 0 18px;
 }
 .home-section-user .user-body-main {
@@ -3407,7 +3394,8 @@ table.dataTable thead .sorting_desc:after {
     margin: 1px 8px;
     vertical-align: text-bottom;
 }
-.user-part-body .btn-sm {
+.user-bound .btn-sm,
+.user-part-account .btn-sm {
     font-size: 12px;
     padding: 4px 12px;
     height: 24px;
