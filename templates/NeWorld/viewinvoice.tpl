@@ -40,7 +40,7 @@ $(function () {
         {else}
 			<div class="header">
 	            <div class="row">
-	                <div class="col-sm-6">
+	                <div class="col-sm-6 col-xs-6">
 	
 	                    {if $logo}
 	                        <p><img src="{$logo}" title="{$companyname}" /></p>
@@ -71,7 +71,7 @@ $(function () {
 	                    {/if}
 	
 	                </div>
-	                <div class="col-sm-6 text-right">
+	                <div class="col-sm-6 col-xs-6 text-right">
 		                
 		                <p class="black">Invoice</p>
 		                <p class="gery">{$pagetitle}</p>
@@ -173,7 +173,7 @@ $(function () {
                             <tr>
                                 <td><strong>{$LANG.invoicestransdate}</strong></td>
                                 <td><strong>{$LANG.invoicestransgateway}</strong></td>
-                                <td><strong>{$LANG.invoicestransid}</strong></td>
+                                <td><strong class="hidden-xs">{$LANG.invoicestransid}</strong></td>
                                 <td class="text-right"><strong>{$LANG.invoicestransamount}</strong></td>
                             </tr>
                         </thead>
@@ -182,7 +182,7 @@ $(function () {
                                 <tr>
                                     <td>{$transaction.date}</td>
                                     <td>{$transaction.gateway}</td>
-                                    <td>{$transaction.transid}</td>
+                                    <td><span class="hidden-xs">{$transaction.transid}</span></td>
                                     <td class="text-right">{$transaction.amount}</td>
                                 </tr>
                             {foreachelse}
@@ -224,7 +224,7 @@ $(function () {
 	                    </address>
 	                </div>
 	                <div class="col-sm-4">
-	                    <strong class="gray mrb10">{$LANG.paymentmethod}:</strong><br>
+	                    <strong class="gray mrb10">{$LANG.paymentmethod}:</strong>
 	                    <span>
 	                        {if $status eq "Unpaid" && $allowchangegateway}
 	                            <form method="post" action="{$smarty.server.PHP_SELF}?id={$invoiceid}">

@@ -10,7 +10,9 @@
  * @license   http://www.whmcs.com/license/
  * @link      http://www.whmcs.com/
  */
-
+:focus {
+	outline: none;
+}
 body {
 	font-size: 14px;
 	font-family: "proxima-nova", Verdana, Tahoma, sans-serif;
@@ -74,7 +76,12 @@ p.gery {
 	min-width: 120px;
 	display: inline-block;
 }
+.table-responsive {
+	border: 0 none;
+	margin-bottom: 0;
+}
 .contets .table {
+	border: 0 none;
 	margin-bottom: 0;
 }
 .contets .table>tbody>tr>td {
@@ -115,15 +122,22 @@ p.gery {
     margin-bottom: 20px;
 }
 
-@media (max-width: 895px) {
-    .invoice-container {
-        margin: 35px;
-    }
-}
 @media (max-width: 767px) {
-    .invoice-container {
-        padding: 45px 45px 70px 45px;
-    }
+	.header,
+	.footer,
+	.invoice-total {
+		padding: 30px 20px;
+	}
+	.container {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.contets .table>tbody>tr>td:first-child, .transactions-container .table>tbody>tr>td:first-child, .transactions-container .table>thead>tr>td:first-child {
+		padding-left: 20px;
+	}
+	.contets .table>tbody>tr>td:last-child, .transactions-container .table>tbody>tr>td:last-child, .transactions-container .table>thead>tr>td:last-child {
+		padding-right: 20px;
+	}
 }
 
 /* Invoice Status Formatting */
