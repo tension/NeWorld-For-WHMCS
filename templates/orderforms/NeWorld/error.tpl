@@ -1,12 +1,12 @@
-{include file="orderforms/$carttpl/common.tpl"}
+{include file="orderforms/NeWorld/common.tpl"}
 
-<section class="order-home space2x">
+<section class="order-error space2x">
 	<div class="container">
 		<div id="order-standard_cart">
 		
 		    <div class="row">
 		
-		        <div class="col-md-12">
+		        <div class="col-md-10 col-md-offset-1">
 		
 		            <div class="header-lined">
 		                <h1>
@@ -16,7 +16,7 @@
 		
 		        </div>
 		
-		        <div class="col-md-12">
+		        <div class="col-md-10 col-md-offset-1">
 		
 		            {include file="orderforms/standard_cart/sidebar-categories-collapsed.tpl"}
 		

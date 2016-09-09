@@ -3,7 +3,7 @@
 <section class="order-home space2x">
 	<div class="container">
 		
-		<div id="order-NeWorld">
+		<div id="order-standard_cart">
 		
 		    <div class="row">
 		
@@ -38,18 +38,18 @@
 		                            <div class="product clearfix" id="product{$num}">
 		                                <form method="post" action="{$smarty.server.PHP_SELF}?a=add" class="form-inline">
 		                                    <input type="hidden" name="aid" value="{$addon.id}" />
-		                                    <header>
-		                                        <span>{$addon.name}</span>
-		                                        {if $product.qty}
-		                                            <span class="qty">
-		                                                {$product.qty} {$LANG.orderavailable}
-		                                            </span>
-		                                        {/if}
-		                                    </header>
-		                                    <div class="product-desc">
+			                                <h4 class="text-center">
+			                                    <span>{$addon.name}</span>
+			                                    {if $product.qty}
+			                                        <span class="qty">
+			                                            {$product.qty} {$LANG.orderavailable}
+			                                        </span>
+			                                    {/if}
+			                                </h4>
+		                                    <div class="product-desc" style="padding: 10px">
 		                                        <p>{$addon.description}</p>
-		                                        <div class="form-group">
-		                                            <select name="productid" id="inputProductId{$num}" class="field">
+		                                        <div class="form-group" style="margin: 0 -10px;">
+		                                            <select name="productid" id="inputProductId{$num}" class="col-sm-10">
 		                                                {foreach $addon.productids as $product}
 		                                                    <option value="{$product.id}">
 		                                                        {$product.product}{if $product.domain} - {$product.domain}{/if}
@@ -58,20 +58,23 @@
 		                                            </select>
 		                                        </div>
 		                                    </div>
-		                                    <footer>
-		                                        <div class="product-pricing">
-		                                            {if $addon.free}
+			                                <div class="product-btm">
+			                                    <div class="product-pricing pull-left" id="product{$product.pid}-price">
+			               		                    {if $addon.free}
 		                                                {$LANG.orderfree}
 		                                            {else}
-		                                                <span class="price">{$addon.recurringamount} {$addon.billingcycle}</span>
+		                                                <span class="price">
+		                                                {$addon.recurringamount} {$addon.billingcycle}</span>
 		                                                {if $addon.setupfee}<br />+ {$addon.setupfee} {$LANG.ordersetupfee}{/if}
 		                                            {/if}
-		                                        </div>
+			                                    </div>
+			                                    <div class="pull-right">
 		                                        <button type="submit" class="btn btn-success btn-sm">
 		                                            <i class="fa fa-shopping-cart"></i>
 		                                            {$LANG.ordernowbutton}
 		                                        </button>
-		                                    </footer>
+			                                    </div>
+			                                </div>
 		                                </form>
 		                            </div>
 		                        </div>
