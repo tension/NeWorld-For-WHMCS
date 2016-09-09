@@ -687,6 +687,10 @@
     background-image: url('./img/paypal.svg');
     background-size: 114px 40px;
 }
+.payment .paytype.weixinpay {
+    background-image: url('./img/wepay.png');
+    background-size: 112px 32px;
+}
 .payment .paytype input[type=radio] {
     margin: 5px 0 0 0;
     vertical-align: top;
