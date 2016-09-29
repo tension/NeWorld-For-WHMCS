@@ -57,7 +57,7 @@
 			<div class="col-md-3 col-sm-6 col-xs-6">
 				<div class="user-part-header">
 					<a class="user-header ng-scope" href="clientarea.php?action=details">
-						<img width="50" height="50" src="//gravatar.css.network/avatar/{$clientsdetails.email|md5}?s=100&d={$systemurl}templates/{$template}/assets/img/default_family.jpg" alt="" />
+						<img width="50" height="50" src="//gravatar.neworld.org/avatar/{$clientsdetails.email|md5}?s=100&d={$systemurl}templates/{$template}/assets/img/default_family.jpg" alt="" />
 					</a>
 					<div class="user-name">
 						{if $clientsdetails.firstname != '' && $clientsdetails.lastname != '' && $clientsdetails.lastname != '姓' && $clientsdetails.firstname != '名'}
