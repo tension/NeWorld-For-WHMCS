@@ -2085,6 +2085,52 @@ $_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to you
 $_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
 $_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
 $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['downloadLoginRequiredTagline'] = "Please login to access the requested file download";
+
+$_LANG['orderForm']['year'] = "Year";
+$_LANG['orderForm']['years'] = "Years";
+$_LANG['orderForm']['domainOrKeyword'] = "Enter a domain or keyword";
+$_LANG['orderForm']['searching'] = "Searching";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> is unavailable"; //Strong tag is required here
+$_LANG['orderForm']['add'] = "Add";
+$_LANG['orderForm']['suggestedDomains'] = "Suggested Domains";
+$_LANG['orderForm']['generatingSuggestions'] = "Generating suggestions for you";
+$_LANG['orderForm']['addHosting'] = "Add Web Hosting";
+$_LANG['orderForm']['chooseFromRange'] = "Choose from a range of web hosting packages";
+$_LANG['orderForm']['packagesForBudget'] = "We have packages designed to fit every budget";
+$_LANG['orderForm']['exploreNow'] = "Explore packages now";
+$_LANG['orderForm']['transferToUs'] = "Transfer your domain to us";
+$_LANG['orderForm']['transferExtend'] = "Transfer now to extend your domain by 1 year!";
+$_LANG['orderForm']['transferDomain'] = "Transfer a domain";
+$_LANG['orderForm']['extendExclusions'] = "Excludes certain TLDs and recently renewed domains";
+$_LANG['orderForm']['singleTransfer'] = "Single domain transfer";
+$_LANG['orderForm']['enterDomain'] = "Please enter your domain";
+$_LANG['orderForm']['authCode'] = "Authorization Code";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Code / Auth Code";
+$_LANG['orderForm']['authCodeTooltip'] = "To initiate a transfer you will need to obtain the authorization code from your current registrar. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Help";
+$_LANG['orderForm']['required'] = "Required";
+
+$_LANG['orderForm']['checkingAvailability'] = 'Checking availability';
+$_LANG['orderForm']['verifyingTransferEligibility'] = 'Verifying transfer eligibility';
+$_LANG['orderForm']['verifyingDomain'] = 'Verifying your domain selection';
+$_LANG['orderForm']['transferEligible'] = 'Your domain is eligible for transfer';
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = 'Please ensure you have unlocked your domain at your current registrar before continuing.';
+$_LANG['orderForm']['transferNotEligible'] = 'Not Eligible for Transfer';
+$_LANG['orderForm']['transferNotRegistered'] = 'The domain you entered does not appear to be registered.';
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = 'If the domain was registered recently, you may need to try again later.';
+$_LANG['orderForm']['transferAlternativelyRegister'] = 'Alternatively, you can perform a search to register this domain.';
+$_LANG['orderForm']['domainInvalid'] = 'Invalid domain name provided';
+$_LANG['orderForm']['domainInvalidCheckEntry'] = 'Please check your entry and try again.';
+$_LANG['orderForm']['domainPriceRegisterLabel'] = 'Continue to register this domain for';
+$_LANG['orderForm']['domainPriceTransferLabel'] = 'Transfer to us and extend by 1 year* for';
+
+$_LANG['change'] = "Change";
+
+$_LANG['cartSimpleCaptcha'] = "Please enter the code shown below";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Showing the most recent 100 records";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domains must begin with a letter or a number";
+$_LANG['orderForm']['domainLengthRequirements'] = " and be between <span class=\"min-length\"></span> and <span class=\"max-length\"></span> characters in length";
 
 ////////// End of english language file.  Do not place any translation strings below this line!
-
