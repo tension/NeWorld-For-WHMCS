@@ -1,7 +1,7 @@
 {php}
 
 // 下方输入您的授权许可
-$NeWorld_license = "whmcs-8537c953b1f8cd895adc1fb944f55a63";
+$NeWorld_license = "许可序列号";
 // 上方输入您的授权许可
 
 function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
@@ -9,17 +9,17 @@ function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
     // -----------------------------------
     //  -- Configuration Values --
     // -----------------------------------
-
-    // Enter the url to your WHMCS installation here
     $whmcsurl = 'https://neworld.org/';
-    // Must match what is specified in the MD5 Hash Verification field
-    // of the licensing product that will be used with this check.
     $licensing_secret_key = 'teNsi0n';
-    // The number of days to wait between performing remote license checks
-    $localkeydays = 180;
-    // The number of days to allow failover for after local key expiry
-    $allowcheckfaildays = 30;
+    $localkeydays = 30;
+    $allowcheckfaildays = 5;
 
+    // -----------------------------------
+    //  -- Do not edit below this line --
+    // -----------------------------------
+	$dirpath = dirname(__FILE__);
+	$license_cache = $dirpath . DIRECTORY_SEPARATOR . 'license';
+	$localkey = file_get_contents($license_cache);
     // -----------------------------------
     //  -- Do not edit below this line --
     // -----------------------------------
@@ -158,13 +158,18 @@ function NeWorld_Prefix_Check_License($NeWorld_license, $localkey='') {
             $data_encoded = wordwrap($data_encoded, 80, "\n", true);
             $results['localkey'] = $data_encoded;
         }
+		switch ($results['status']) {
+			case 'Active':
+				file_put_contents($license_cache, $data_encoded);
+				break;
+			default:
+				break;
+		}
         $results['remotecheck'] = true;
     }
     unset($postfields,$data,$matches,$whmcsurl,$licensing_secret_key,$checkdate,$usersip,$localkeydays,$allowcheckfaildays,$md5hash);
     return $results;
 }
-
-$localkey = '2bDEbLaNZgYnEXGWyCpuuLF6jxpHdMLzqwoErmWLTRkufPkUyLxAvTtbdmbtd4TfjuxUDVhCcuKDgcxZdEPyUtjWTaTPegRMv9ogAjbUtsKNrgAwgRZibeLYsJsDvoLnNQEtgTN3jn4rjmfstdxoHg6puQpANHpxHMATjBBtcUmAYyCUoh4hBHFZrVDRRCGRxqFiBojkWmaGdJXiTuVDoanfwRfjfRmHdwcNBxDMJWwYfQCqdezvNUWb93BmEJyeqfKqtshWrwrG8XAbWYFaaxwWuxmPTG8XyzvKDhxkEnYJpKXeZWJpMmisKMYoedymAFfTBnoorYfEKpb6nKZ7xwQiVtkAAomAhcuEUpRBzCPcEMGasCA4yfcZtnqffDancvodcsNZHF8HQaUVnQKV2rxrvRUKeMtP9WUrQXzywLuubrjybnXYrrmmEbiQvinzwduPsQA4U8HynpnGGxWbhcJgYMmGJYmmtEnQuKMHdKQVaatJhoGk';
 
 // Validate the license key information
 $results = NeWorld_Prefix_Check_License($NeWorld_license, $localkey);

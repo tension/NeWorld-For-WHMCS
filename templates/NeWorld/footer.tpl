@@ -6,7 +6,6 @@
 {include file="$template/NeWorld/NeWorld-footer.tpl" title=$displayTitle desc=$tagline}
 
 <script src="{$WEB_ROOT}/templates/{$template}/assets/js/bootstrap.min.js"></script>
-<script src="{$WEB_ROOT}/templates/{$template}/assets/js/wow.min.js"></script>
 <script src="{$WEB_ROOT}/templates/{$template}/assets/js/bootstrap-hover.min.js"></script>
 <script src="{$WEB_ROOT}/templates/{$template}/assets/js/bootstrap-select.min.js"></script>
 <script src="{$WEB_ROOT}/templates/{$template}/assets/js/jquery.zclip.js"></script>
