@@ -11,7 +11,7 @@
 
 if (!defined("WHMCS")) die("This file cannot be accessed directly");
 
-$_LANG['locale'] = "zh_cn";
+$_LANG['locale'] = "zh_CN";
 
 $_LANG['accountinfo'] = "账户信息";
 $_LANG['accountstats'] = "账户统计";
