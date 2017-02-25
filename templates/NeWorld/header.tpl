@@ -24,8 +24,7 @@ TEL: 18910030001 MAIL:tension@me.com -->
 </head>
 
 <body {if $formaction == 'dologin.php' || $filename == 'logout' || $filename == 'pwreset'}class="login"{elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin} class="nowhmcs"{/if}>
-	
-{include file="$template/NeWorld/function.tpl"}
+
 {$headeroutput}
 
 {if $adminMasqueradingAsClient}
