@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-_/_/_/_/_/  _/_/_/_/  _/      _/    _/_/_/  _/_/_/    _/_/    _/      _/   
-   _/      _/        _/_/    _/  _/          _/    _/    _/  _/_/    _/    
-  _/      _/_/_/    _/  _/  _/    _/_/      _/    _/    _/  _/  _/  _/     
- _/      _/        _/    _/_/        _/    _/    _/    _/  _/    _/_/      
+_/_/_/_/_/  _/_/_/_/  _/      _/    _/_/_/  _/_/_/    _/_/    _/      _/
+   _/      _/        _/_/    _/  _/          _/    _/    _/  _/_/    _/
+  _/      _/_/_/    _/  _/  _/    _/_/      _/    _/    _/  _/  _/  _/
+ _/      _/        _/    _/_/        _/    _/    _/    _/  _/    _/_/
 _/      _/_/_/_/  _/      _/  _/_/_/    _/_/_/    _/_/    _/      _/
 
 承接大型网站建设、设计、制作、规划工作！
@@ -23,25 +23,25 @@ TEL: 18910030001 MAIL:tension@me.com -->
 
 </head>
 
-<body {if $formaction == 'dologin.php' || $filename == 'logout' || $filename == 'pwreset'}class="login"{elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin} class="nowhmcs"{/if}>
+<body {if $filename == 'login' || $filename == 'logout' || $filename == 'pwreset'}class="login"{elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin} class="nowhmcs"{/if}>
 
 {$headeroutput}
 
 {if $adminMasqueradingAsClient}
     <!-- Return to admin link -->
     <div class="alert alert-danger admin-masquerade-notice">
-        {$LANG.adminmasqueradingasclient} 
+        {$LANG.adminmasqueradingasclient}
         <a href="{$WEB_ROOT}/logout.php?returntoadmin=1" class="alert-link">{$LANG.logoutandreturntoadminarea}</a>
     </div>
 {elseif $adminLoggedIn}
     <!-- Return to admin link -->
     <div class="alert alert-danger admin-masquerade-notice">
-        {$LANG.adminloggedin} 
+        {$LANG.adminloggedin}
         <a href="{$WEB_ROOT}/logout.php?returntoadmin=1" class="alert-link">{$LANG.returntoadminarea}</a>
     </div>
 {/if}
 
-{if $formaction == 'dologin.php' || $filename == 'logout' || $filename == 'pwreset' }
+{if $filename == 'login' || $filename == 'logout' || $filename == 'pwreset' }
 
 {elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin}
 
@@ -50,11 +50,11 @@ TEL: 18910030001 MAIL:tension@me.com -->
 	{if $templatefile == 'homepage'}
 		{include file="$template/NeWorld/index.tpl" title=$displayTitle desc=$tagline}
 	{/if}
-	
+
 {else}
 
 	{include file="$template/NeWorld/whmcs-header.tpl" title=$displayTitle desc=$tagline}
-	
+
 {/if}
 
 {if $primarySidebar->hasChildren() || $secondarySidebar->hasChildren()}
@@ -69,7 +69,7 @@ TEL: 18910030001 MAIL:tension@me.com -->
 
 {include file="$template/includes/verifyemail.tpl"}
 
-{if $formaction != 'dologin.php' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
+{if $filename == 'login' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
 	{if $templatefile != 'clientareahome' || $templatefile != 'downloads' || $templatefile != 'affiliates' || $templatefile != 'supportticketsubmit-stepone'}
 		<div class="navbar-collapse-inner">
 			<div class="navbar-collapse-bg"></div>
