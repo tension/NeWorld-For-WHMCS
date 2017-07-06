@@ -23,7 +23,7 @@ TEL: 18910030001 MAIL:tension@me.com -->
 
 </head>
 
-<body {if $filename == 'login' || $filename == 'logout' || $filename == 'pwreset'}class="login"{elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin} class="nowhmcs"{/if}>
+<body {if $templatefile == 'login' || $filename == 'logout' || $filename == 'pwreset'}class="login"{elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin} class="nowhmcs"{/if}>
 
 {$headeroutput}
 
@@ -41,7 +41,7 @@ TEL: 18910030001 MAIL:tension@me.com -->
     </div>
 {/if}
 
-{if $filename == 'login' || $filename == 'logout' || $filename == 'pwreset' }
+{if $templatefile == 'login' || $filename == 'logout' || $filename == 'pwreset' }
 
 {elseif $templatefile == 'homepage' || $templatefile == 'vps' || $templatefile == 'pricing' || $templatefile == 'tos' || $templatefile == 'features' || $filename == "cart" || $filename == 'contact' && !$loggedin}
 
@@ -69,7 +69,7 @@ TEL: 18910030001 MAIL:tension@me.com -->
 
 {include file="$template/includes/verifyemail.tpl"}
 
-{if $filename == 'login' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
+{if $templatefile != 'login' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
 	{if $templatefile != 'clientareahome' || $templatefile != 'downloads' || $templatefile != 'affiliates' || $templatefile != 'supportticketsubmit-stepone'}
 		<div class="navbar-collapse-inner">
 			<div class="navbar-collapse-bg"></div>
