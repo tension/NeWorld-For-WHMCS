@@ -1,6 +1,9 @@
 # NeWorld-For-WHMCS
 
-NeWorld Team 作品
+
+[![GitHub release](https://img.shields.io/github/v/release/tension/NeWorld-For-WHMCS?color=%235e72e4&style=for-the-badge)](https://github.com/tension/NeWorld-For-WHMCS/releases) [![GitHub All Releases](https://img.shields.io/github/downloads/tension/NeWorld-For-WHMCS/total?style=for-the-badge)](https://github.com/tension/NeWorld-For-WHMCS/releases) [![GitHub](https://img.shields.io/github/license/tension/NeWorld-For-WHMCSe?color=blue&style=for-the-badge)](https://github.com/tension/NeWorld-For-WHMCS/blob/master/LICENSE) [![Author]( https://img.shields.io/badge/author-tension-yellow?style=for-the-badge)](https://github.com/tension) [![GitHub stars](https://img.shields.io/github/stars/tension/NeWorld-For-WHMCS?color=ff69b4&style=for-the-badge)](https://github.com/solstice23/argon-theme/stargazers)
+
+[![GitHub last commit](https://img.shields.io/github/last-commit/tension/NeWorld-For-WHMCS?style=flat-square)](https://github.com/tension/NeWorld-For-WHMCS/commits/master) [![GitHub Release Date](https://img.shields.io/github/release-date/tension/NeWorld-For-WHMCS?style=flat-square)](https://github.com/tension/NeWorld-For-WHMCS/releases) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tension/NeWorld-For-WHMCS?style=flat-square)
 
 ### 开源版本不处理任何技术问题，如需要技术服务请前往官网购买收费服务。
 
